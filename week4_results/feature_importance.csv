@@ -1,0 +1,19 @@
+Feature,Importance
+customs_clearance_time,0.083514347058044
+loading_unloading_time,0.08283379400126584
+delivery_time_deviation,0.0793517887566775
+shipping_costs,0.07874879121591656
+supplier_reliability_score,0.07824637240273656
+traffic_congestion_level,0.0762102040455477
+historical_demand,0.07517292814076576
+route_risk_level,0.07396148194633305
+port_congestion_level,0.07275453598416771
+fuel_consumption_rate,0.07239553913621322
+weather_condition_severity,0.07187180149596432
+delay_probability,0.06748136003190618
+month,0.03080004063500617
+day_of_week,0.02786067158689701
+year,0.01492810168658034
+risk_classification_Moderate Risk,0.00543743056896117
+risk_classification_Low Risk,0.004291296970162986
+risk_classification_High Risk,0.004139514336853984

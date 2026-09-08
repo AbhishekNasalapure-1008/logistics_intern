@@ -1,0 +1,20 @@
+start
+step1_load
+step1_done rows=32065 cols=30
+step2_3_prep
+step3_done train=25652 test=6413 feats_enc=18
+step4_lr
+step4_done RMSE=4.5600
+step5_dt
+step5_done RMSE=6.4812
+step6_rf
+step6_done RF_RMSE=4.6479 best_tree=Random Forest best_overall=Linear Regression
+step7_cv
+step7_done cv_rf_r2=-0.0382
+step8_tune
+step8_done tuned_RMSE=4.5635 improved=True
+step9_fi
+step9_done top=["customs_clearance_time","loading_unloading_time","delivery_time_deviation"]
+step10_viz
+step10_viz_done
+COMPLETE

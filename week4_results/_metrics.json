@@ -1,0 +1,163 @@
+{
+  "shape_rows": 32065,
+  "shape_cols": 30,
+  "missing_total": 0,
+  "has_lead_time": true,
+  "n_features": 16,
+  "features_numeric": [
+    "shipping_costs",
+    "traffic_congestion_level",
+    "weather_condition_severity",
+    "port_congestion_level",
+    "supplier_reliability_score",
+    "route_risk_level",
+    "customs_clearance_time",
+    "delay_probability",
+    "delivery_time_deviation",
+    "historical_demand",
+    "fuel_consumption_rate",
+    "loading_unloading_time",
+    "year",
+    "month",
+    "day_of_week"
+  ],
+  "features_categorical": [
+    "risk_classification"
+  ],
+  "target": "lead_time_days",
+  "problem_type": "regression",
+  "train_records": 25652,
+  "test_records": 6413,
+  "feature_names_after_encoding": [
+    "customs_clearance_time",
+    "loading_unloading_time",
+    "delivery_time_deviation",
+    "shipping_costs",
+    "supplier_reliability_score",
+    "traffic_congestion_level",
+    "historical_demand",
+    "route_risk_level",
+    "port_congestion_level",
+    "fuel_consumption_rate",
+    "weather_condition_severity",
+    "delay_probability",
+    "month",
+    "day_of_week",
+    "year",
+    "risk_classification_Moderate Risk",
+    "risk_classification_Low Risk",
+    "risk_classification_High Risk"
+  ],
+  "X_train_shape": [
+    25652,
+    18
+  ],
+  "X_test_shape": [
+    6413,
+    18
+  ],
+  "lr": {
+    "MAE": 3.934897582363041,
+    "RMSE": 4.55995777172817,
+    "R2": -0.0002099085991316
+  },
+  "dt": {
+    "MAE": 4.998927073728101,
+    "RMSE": 6.481235926543048,
+    "R2": -1.0206224427869928
+  },
+  "rf": {
+    "MAE": 4.022599222683676,
+    "RMSE": 4.647931976423169,
+    "R2": -0.0391758318618069
+  },
+  "best_model_overall": "Linear Regression",
+  "best_tree_model": "Random Forest",
+  "cv": {
+    "linear_regression": {
+      "cv_mae_mean": 3.892987,
+      "cv_mae_std": 0.028058,
+      "cv_rmse_mean": 4.514808,
+      "cv_rmse_std": 0.031017,
+      "cv_r2_mean": -0.000617,
+      "cv_r2_std": 0.000564
+    },
+    "decision_tree": {
+      "cv_mae_mean": 4.993965,
+      "cv_mae_std": 0.045073,
+      "cv_rmse_mean": 6.461703,
+      "cv_rmse_std": 0.043595,
+      "cv_r2_mean": -1.050109,
+      "cv_r2_std": 0.042182
+    },
+    "random_forest": {
+      "cv_mae_mean": 3.979987,
+      "cv_mae_std": 0.037132,
+      "cv_rmse_mean": 4.598808,
+      "cv_rmse_std": 0.037683,
+      "cv_r2_mean": -0.038198,
+      "cv_r2_std": 0.006671
+    }
+  },
+  "tuning": {
+    "tuned_model": "Random Forest",
+    "best_params": {
+      "max_depth": 10,
+      "max_features": "sqrt",
+      "min_samples_leaf": 1,
+      "min_samples_split": 5,
+      "n_estimators": 50
+    },
+    "best_cv_rmse": 4.520996,
+    "MAE": 3.933235519015008,
+    "RMSE": 4.563512725585726,
+    "R2": -0.0017700485245863,
+    "default_rmse": 4.647931976423169,
+    "rmse_improvement_pct": 1.8162755235159003,
+    "improved": true
+  },
+  "top5_features": [
+    {
+      "Feature": "customs_clearance_time",
+      "Importance": 0.083514347058044
+    },
+    {
+      "Feature": "loading_unloading_time",
+      "Importance": 0.0828337940012658
+    },
+    {
+      "Feature": "delivery_time_deviation",
+      "Importance": 0.0793517887566775
+    },
+    {
+      "Feature": "shipping_costs",
+      "Importance": 0.0787487912159165
+    },
+    {
+      "Feature": "supplier_reliability_score",
+      "Importance": 0.0782463724027365
+    }
+  ],
+  "feature_ranks": {
+    "customs_clearance_time": 1,
+    "loading_unloading_time": 2,
+    "delivery_time_deviation": 3,
+    "shipping_costs": 4,
+    "supplier_reliability_score": 5,
+    "traffic_congestion_level": 6,
+    "historical_demand": 7,
+    "route_risk_level": 8,
+    "port_congestion_level": 9,
+    "fuel_consumption_rate": 10,
+    "weather_condition_severity": 11,
+    "delay_probability": 12,
+    "month": 13,
+    "day_of_week": 14,
+    "year": 15,
+    "risk_classification_Moderate Risk": 16,
+    "risk_classification_Low Risk": 17,
+    "risk_classification_High Risk": 18
+  },
+  "final_visualization_model": "Tuned Random Forest",
+  "final_visualization_rmse": 4.563512725585726
+}
